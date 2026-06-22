@@ -341,8 +341,8 @@ body
 .theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title-content::before {
     content: "";
     flex: 0 0 auto;
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     margin-right: 9px;
     border-radius: 50%;
     border: 1.5px solid var(--bc-faint);

@@ -255,8 +255,7 @@ body
 .theme-dark .markdown-rendered .heading,
 .theme-dark .inline-title,
 .theme-dark .HyperMD-header,
-.theme-dark .cm-s-obsidian .cm-header,
-.theme-dark .view-header-title {
+.theme-dark .cm-s-obsidian .cm-header {
     font-family: var(--bc-serif);
     letter-spacing: -0.005em;
 }

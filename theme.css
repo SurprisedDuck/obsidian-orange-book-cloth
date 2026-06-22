@@ -1,0 +1,219 @@
+/*
+ * Book Cloth — a dark-only Obsidian theme.
+ * A warm, paper-like take on the Claude Cowork look:
+ * toasted-charcoal surfaces, a clay/coral accent, serif headings.
+ *
+ * (c) 2026 SurprisedDuck. MIT.
+ * Heading font: Newsreader by Production Type, SIL OFL 1.1.
+ *   https://fonts.google.com/specimen/Newsreader
+ *
+ * NOTE: @font-face blocks (bundled Newsreader woff2) are prepended in Task 3.
+ */
+
+:root
+{
+    /* Warm-neutral surfaces (dark only) — darkest → lightest */
+    --bc-backdrop:   #1a1a18; /* window backdrop / titlebar */
+    --bc-sidebar:    #1f1e1d;
+    --bc-elev:       #2c2a27; /* secondary-alt surface / cards */
+    --bc-editor:     #262624; /* main editing surface */
+    --bc-surface:    #33312e;
+    --bc-surface-hi: #3d3b38;
+    --bc-row-odd:    #222220; /* table row striping */
+    --bc-row-even:   #272623;
+
+    /* Clay / book-cloth accent family */
+    --bc-clay:     #cc785c; /* accent — Anthropic "book cloth" */
+    --bc-coral:    #d97757; /* links */
+    --bc-coral-hi: #e08a6b; /* link / accent hover */
+    --bc-clay-rgb: 204,120,92;
+
+    /* Warm off-white ink */
+    --bc-text:     #d6d2c6;
+    --bc-emphasis: #f5f3ec;
+    --bc-muted:    #8f8a80;
+    --bc-faint:    #6b675e;
+
+    /* Warm aurora — semantic / syntax */
+    --bc-red:    #e0837a;
+    --bc-orange: #d9a05b;
+    --bc-yellow: #d6c088;
+    --bc-green:  #a3b584;
+    --bc-blue:   #8faac4;
+    --bc-purple: #b89bc4;
+    --bc-cyan:   #8fbcb0;
+
+    /* Bundled serif stack for headings (face defined in Task 3) */
+    --bc-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
+
+body
+{
+    /* Accent (HSL of #cc785c) — drives --interactive-accent, toggles, handles */
+    --accent-h: 15;
+    --accent-s: 52%;
+    --accent-l: 58%;
+
+    /* Link / tag decorations */
+    --link-decoration:                none;
+    --link-decoration-hover:          underline;
+    --link-external-decoration:       underline dotted;
+    --link-external-decoration-hover: underline dotted;
+    --tag-decoration:                 none;
+    --tag-decoration-hover:           none;
+    --tag-padding-x:                  .65em;
+    --tag-padding-y:                  .25em;
+
+    /* Weights */
+    --bold-weight:     650;
+    --tab-font-weight: 600;
+
+    /* Radius scale — soft, paper-card feel */
+    --radius-s:        6px;
+    --radius-m:        9px;
+    --radius-l:        14px;
+    --tab-radius:      var(--radius-m);
+    --modal-radius:    var(--radius-l);
+    --checkbox-radius: 5px;
+
+    /* Headings — weight & rhythm (serif looks best a touch lighter) */
+    --h1-weight:       600;
+    --h2-weight:       600;
+    --h3-weight:       600;
+    --h4-weight:       600;
+    --h5-weight:       600;
+    --h6-weight:       600;
+    --heading-spacing: 2.2em;
+}
+
+/* Dark-only theme: alias light-mode to the same values so it never renders
+   as an unstyled light theme if Obsidian is set to light. */
+.theme-dark,
+.theme-light
+{
+    /* Backgrounds */
+    --background-primary:               var(--bc-editor);
+    --background-primary-alt:           var(--bc-editor);
+    --background-secondary:             var(--bc-sidebar);
+    --background-secondary-alt:         var(--bc-elev);
+    --background-modifier-border:       var(--bc-surface);
+    --background-modifier-border-hover: var(--bc-surface-hi);
+    --background-modifier-hover:        rgba(var(--bc-clay-rgb), .08);
+
+    /* Text */
+    --text-normal:    var(--bc-text);
+    --text-muted:     var(--bc-muted);
+    --text-faint:     var(--bc-faint);
+    --text-on-accent: var(--bc-emphasis);
+
+    /* Headings — clean ink gradient (serif applied in Task 3) */
+    --h1-color:           var(--bc-emphasis);
+    --h2-color:           var(--bc-emphasis);
+    --h3-color:           var(--bc-text);
+    --h4-color:           var(--bc-text);
+    --h5-color:           var(--bc-muted);
+    --h6-color:           var(--bc-muted);
+    --inline-title-color: var(--bc-emphasis);
+
+    /* Links — clay/coral */
+    --text-accent:               var(--bc-coral);
+    --text-accent-hover:         var(--bc-coral-hi);
+    --link-color:                var(--bc-coral);
+    --link-color-hover:          var(--bc-coral-hi);
+    --link-external-color:       var(--bc-coral);
+    --link-external-color-hover: var(--bc-coral-hi);
+    --link-unresolved-color:     var(--bc-muted);
+
+    /* Emphasis */
+    --bold-color:   var(--bc-emphasis);
+    --italic-color: inherit;
+
+    /* Code */
+    --code-normal:     var(--bc-orange);
+    --code-background: var(--bc-sidebar);
+
+    /* Highlight (==mark==) */
+    --text-highlight-bg: rgba(var(--bc-clay-rgb), .30);
+    --text-highlight-fg: var(--bc-emphasis);
+
+    /* Tags */
+    --tag-color:            var(--bc-clay);
+    --tag-background:        var(--bc-surface);
+    --tag-background-hover:  var(--bc-surface-hi);
+
+    /* Checkboxes */
+    --checkbox-color:              var(--bc-clay);
+    --checkbox-color-hover:        var(--bc-coral-hi);
+    --checkbox-border-color:       var(--bc-clay);
+    --checkbox-border-color-hover: var(--bc-coral-hi);
+    --checklist-done-color:        var(--bc-muted);
+
+    /* Selection & active line */
+    --cursor-line-background: rgba(var(--bc-clay-rgb), .07);
+    --text-selection:         rgba(var(--bc-clay-rgb), .26);
+    --flashing-background:    rgba(var(--bc-clay-rgb), .25);
+
+    /* Semantic colours (callouts, syntax, graph) — warm aurora */
+    --color-red:    var(--bc-red);
+    --color-orange: var(--bc-orange);
+    --color-yellow: var(--bc-yellow);
+    --color-green:  var(--bc-green);
+    --color-cyan:   var(--bc-cyan);
+    --color-blue:   var(--bc-blue);
+    --color-purple: var(--bc-purple);
+    --color-red-rgb:    224,131,122;
+    --color-orange-rgb: 217,160,91;
+    --color-yellow-rgb: 214,192,136;
+    --color-green-rgb:  163,181,132;
+    --color-cyan-rgb:   143,188,176;
+    --color-blue-rgb:   143,170,196;
+    --color-purple-rgb: 184,155,196;
+
+    /* Accent as RGB (callout-default tint) */
+    --color-accent-rgb: var(--bc-clay-rgb);
+
+    /* Tables */
+    --table-header-background:       var(--bc-sidebar);
+    --table-header-background-hover: var(--bc-surface);
+    --table-row-even-background:     var(--bc-row-even);
+    --table-row-odd-background:      var(--bc-row-odd);
+    --table-row-background-hover:    var(--bc-surface);
+
+    /* Nav / icons / window chrome */
+    --nav-item-color-hover:        var(--bc-emphasis);
+    --nav-item-color-active:       var(--bc-emphasis);
+    --nav-item-background-active:  rgba(var(--bc-clay-rgb), .14);
+    --icon-color-hover:            var(--bc-clay);
+    --icon-color-focused:          var(--bc-coral-hi);
+    --titlebar-text-color-focused: var(--bc-emphasis);
+    --tab-text-color-focused-active:         var(--bc-emphasis);
+    --tab-text-color-focused-active-current: var(--bc-emphasis);
+
+    /* Graph view */
+    --graph-line:            var(--bc-surface);
+    --graph-node:            var(--bc-text);
+    --graph-node-tag:        var(--bc-clay);
+    --graph-node-attachment: var(--bc-green);
+
+    /* Lists & quotes */
+    --list-marker-color:       var(--bc-clay);
+    --blockquote-border-color: var(--bc-clay);
+    --blockquote-color:        var(--bc-muted);
+
+    /* Scrollbars */
+    --scrollbar-thumb-bg:        var(--bc-surface);
+    --scrollbar-active-thumb-bg: var(--bc-surface-hi);
+    --scrollbar-bg:              transparent;
+
+    /* Code syntax highlighting — warm aurora */
+    --code-comment:     var(--bc-faint);
+    --code-keyword:     var(--bc-clay);
+    --code-operator:    var(--bc-text);
+    --code-property:    var(--bc-blue);
+    --code-punctuation: var(--bc-muted);
+    --code-function:    var(--bc-orange);
+    --code-tag:         var(--bc-red);
+    --code-string:      var(--bc-green);
+    --code-value:       var(--bc-purple);
+    --code-important:   var(--bc-yellow);
+}

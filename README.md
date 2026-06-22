@@ -1,6 +1,6 @@
 # Orange Book Cloth
 
-A dark-only Obsidian theme inspired by the **Claude / Anthropic aesthetic** — warm
+A dark-only Obsidian theme inspired by the **Claude / Anthropic aesthetic**, warm
 toasted-charcoal paper, a clay/coral accent, warm off-white ink, and serif
 (Newsreader) headings.
 
@@ -17,7 +17,7 @@ toasted-charcoal paper, a clay/coral accent, warm off-white ink, and serif
 
 - Warm, paper-like dark surfaces (warm-neutral, never blue-grey).
 - Clay/coral accent (`#CC785C`) on links, tags, checkboxes, and the active tab.
-- Serif headings via bundled Newsreader — no network fetch, identical on every machine.
+- Serif headings via bundled Newsreader, no network fetch, identical on every machine.
 - Full coverage: editor, callouts, tables, code, plus app chrome and UI.
 
 ## Credits

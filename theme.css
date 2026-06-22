@@ -1,9 +1,9 @@
 /*
- * Orange Book Cloth — a dark-only Obsidian theme.
+ * Orange Book Cloth, a dark-only Obsidian theme.
  * A warm, paper-like look inspired by the Claude/Anthropic aesthetic:
  * toasted-charcoal surfaces, a clay/coral accent, serif headings.
  *
- * Independent, unofficial theme — not affiliated with or endorsed by Anthropic.
+ * Independent, unofficial theme, not affiliated with or endorsed by Anthropic.
  *
  * (c) 2026 SurprisedDuck. MIT.
  * Heading font: Newsreader by Production Type, SIL OFL 1.1.
@@ -36,7 +36,7 @@
 
 :root
 {
-    /* Warm-neutral surfaces (dark only) — darkest → lightest */
+    /* Warm-neutral surfaces (dark only), darkest → lightest */
     --bc-backdrop:   #1a1a18; /* window backdrop / titlebar */
     --bc-sidebar:    #1f1e1d;
     --bc-elev:       #2c2a27; /* secondary-alt surface / cards */
@@ -60,7 +60,7 @@
     --bc-muted:    #8f8a80;
     --bc-faint:    #6b675e;
 
-    /* Warm aurora — semantic / syntax */
+    /* Warm aurora, semantic / syntax */
     --bc-red:    #e0837a;
     --bc-orange: #d9a05b;
     --bc-yellow: #d6c088;
@@ -75,7 +75,7 @@
 
 body
 {
-    /* Accent (HSL of #cc785c) — drives --interactive-accent, toggles, handles */
+    /* Accent (HSL of #cc785c), drives --interactive-accent, toggles, handles */
     --accent-h: 15;
     --accent-s: 52%;
     --accent-l: 58%;
@@ -94,7 +94,7 @@ body
     --bold-weight:     650;
     --tab-font-weight: 600;
 
-    /* Radius scale — soft, paper-card feel */
+    /* Radius scale, soft, paper-card feel */
     --radius-s:        6px;
     --radius-m:        9px;
     --radius-l:        14px;
@@ -102,7 +102,7 @@ body
     --modal-radius:    var(--radius-l);
     --checkbox-radius: 5px;
 
-    /* Headings — weight & rhythm (serif looks best a touch lighter) */
+    /* Headings, weight & rhythm (serif looks best a touch lighter) */
     --h1-weight:       600;
     --h2-weight:       600;
     --h3-weight:       600;
@@ -132,7 +132,7 @@ body
     --text-faint:     var(--bc-faint);
     --text-on-accent: var(--bc-emphasis);
 
-    /* Headings — clean ink gradient (serif applied in Task 3) */
+    /* Headings, clean ink gradient (serif applied in Task 3) */
     --h1-color:           var(--bc-emphasis);
     --h2-color:           var(--bc-emphasis);
     --h3-color:           var(--bc-text);
@@ -141,7 +141,7 @@ body
     --h6-color:           var(--bc-muted);
     --inline-title-color: var(--bc-emphasis);
 
-    /* Links — clay/coral */
+    /* Links, clay/coral */
     --text-accent:               var(--bc-coral);
     --text-accent-hover:         var(--bc-coral-hi);
     --link-color:                var(--bc-coral);
@@ -179,7 +179,7 @@ body
     --text-selection:         rgba(var(--bc-clay-rgb), .26);
     --flashing-background:    rgba(var(--bc-clay-rgb), .25);
 
-    /* Semantic colours (callouts, syntax, graph) — warm aurora */
+    /* Semantic colours (callouts, syntax, graph), warm aurora */
     --color-red:    var(--bc-red);
     --color-orange: var(--bc-orange);
     --color-yellow: var(--bc-yellow);
@@ -235,7 +235,7 @@ body
     --scrollbar-active-thumb-bg: var(--bc-surface-hi);
     --scrollbar-bg:              transparent;
 
-    /* Code syntax highlighting — warm aurora */
+    /* Code syntax highlighting, warm aurora */
     --code-comment:     var(--bc-faint);
     --code-keyword:     var(--bc-clay);
     --code-operator:    var(--bc-text);

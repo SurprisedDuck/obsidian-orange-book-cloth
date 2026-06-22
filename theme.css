@@ -324,3 +324,54 @@ body
     border-radius: 2px;
     background: var(--bc-clay);
 }
+
+/* ── File explorer: Claude-style nav list ────────────────────────── */
+/* Rounded rows, roomy spacing, a leading dot per file (faint ring →
+   filled clay when active), and muted "section-label" folder titles. */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title,
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title {
+    border-radius: var(--radius-m);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.45;
+    color: var(--bc-text);
+}
+
+/* Leading dot on every file (hollow ring by default). */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title-content::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 7px;
+    height: 7px;
+    margin-right: 9px;
+    border-radius: 50%;
+    border: 1.5px solid var(--bc-faint);
+    background: transparent;
+    transition: background .12s ease, border-color .12s ease;
+}
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Hover: warm wash. */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:hover {
+    background: var(--background-modifier-hover);
+}
+
+/* Active file: warm highlight, emphasis text, filled clay dot. */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title.is-active {
+    background: var(--bc-surface);
+    color: var(--bc-emphasis);
+}
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title.is-active .nav-file-title-content::before {
+    border-color: var(--bc-clay);
+    background: var(--bc-clay);
+}
+
+/* Folder titles read as quiet section labels. */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title-content {
+    color: var(--bc-muted);
+    font-size: .92em;
+    letter-spacing: .01em;
+}

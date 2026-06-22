@@ -357,9 +357,10 @@ body
     align-items: center;
 }
 
-/* Hover: warm wash. */
-.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:hover {
-    background: var(--background-modifier-hover);
+/* Hover: brighter clay wash (sidebar only). */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:hover,
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:hover {
+    background: rgba(var(--bc-clay-rgb), .16);
 }
 
 /* Active file: warm highlight, emphasis text, filled clay dot. */

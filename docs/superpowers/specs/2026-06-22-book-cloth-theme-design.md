@@ -43,7 +43,7 @@ never cool/blue.
 | Surface high | `#3d3b38` |
 | Border | `#38362f` |
 | Border (stronger) | `#423f39` |
-| Table row odd / even | `#222220` / `#27262300` blended (subtle stripe) |
+| Table row odd / even | `#222220` / `#272623` (subtle stripe) |
 
 Text:
 

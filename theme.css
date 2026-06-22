@@ -379,3 +379,18 @@ body
     font-size: .92em;
     letter-spacing: .01em;
 }
+
+/* ── Remove left-sidebar separator lines ─────────────────────────── */
+/* Top: divider under the file-explorer toolbar / tab header. */
+.theme-dark .workspace-split.mod-left-split .nav-header,
+.theme-dark .workspace-split.mod-left-split .workspace-tab-header-container {
+    border-bottom: none;
+    box-shadow: none;
+}
+/* Bottom: divider above the vault switcher / profile. Obsidian sets this
+   border with a fairly specific rule, so override it forcefully. */
+.theme-dark .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+.theme-dark .workspace-sidedock-vault-profile,
+.theme-dark .workspace-drawer-vault-switcher {
+    border-top: 0 !important;
+}

@@ -273,6 +273,10 @@ body
 .theme-dark .workspace-tabs .workspace-leaf,
 .theme-dark .workspace-tab-container { border-radius: var(--radius-l); }
 
+/* Main editor (note) window stays flush and square. */
+.theme-dark .workspace-split.mod-root .workspace-leaf { margin: 0; border-radius: 0; }
+.theme-dark .workspace-split.mod-root .workspace-tab-container { border-radius: 0; }
+
 /* ── Tags as soft clay pills ─────────────────────────────────────── */
 .theme-dark .markdown-rendered a.tag,
 .theme-dark .cm-s-obsidian .cm-hashtag {

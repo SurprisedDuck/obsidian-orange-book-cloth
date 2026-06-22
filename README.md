@@ -1,16 +1,17 @@
-# Book Cloth
+# Orange Book Cloth
 
-A dark-only Obsidian theme styled after **Claude Cowork** — warm toasted-charcoal
-paper, a clay/coral accent, warm off-white ink, and serif (Newsreader) headings.
+A dark-only Obsidian theme inspired by the **Claude / Anthropic aesthetic** — warm
+toasted-charcoal paper, a clay/coral accent, warm off-white ink, and serif
+(Newsreader) headings.
 
-![Book Cloth](screenshot.png)
+![Orange Book Cloth](screenshot.png)
 
 ## Install
 
 **Manual:**
-1. Create the folder `<your vault>/.obsidian/themes/Book Cloth/`.
+1. Create the folder `<your vault>/.obsidian/themes/Orange Book Cloth/`.
 2. Copy `manifest.json` and `theme.css` into it.
-3. In Obsidian: **Settings → Appearance → Themes → Book Cloth**.
+3. In Obsidian: **Settings → Appearance → Themes → Orange Book Cloth**.
 
 ## Features
 
@@ -21,5 +22,13 @@ paper, a clay/coral accent, warm off-white ink, and serif (Newsreader) headings.
 
 ## Credits
 
-- Heading font: [Newsreader](https://fonts.google.com/specimen/Newsreader) by Production Type (SIL OFL 1.1).
+- Heading font: [Newsreader](https://fonts.google.com/specimen/Newsreader) by Production Type,
+  licensed under the SIL Open Font License 1.1 (see [`OFL.txt`](OFL.txt)).
 - Theme © 2026 SurprisedDuck, MIT.
+
+## Disclaimer
+
+This is an independent, unofficial theme inspired by the Claude / Anthropic visual
+aesthetic. It is **not affiliated with, endorsed by, or sponsored by Anthropic**.
+"Claude", "Anthropic", and related names are trademarks of Anthropic PBC, used here
+only descriptively. All bundled fonts are used under their respective open licenses.

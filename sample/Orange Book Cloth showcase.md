@@ -1,8 +1,8 @@
-# Book Cloth showcase
+# Orange Book Cloth showcase
 
 2026-06-22 · #theme #demo
 
-A warm, paper-like workspace styled after Claude Cowork. This note exercises
+A warm, paper-like workspace inspired by the Claude/Anthropic aesthetic. This note exercises
 **bold**, *italic*, ==highlight==, an [[internal link]], an [external link](https://claude.ai),
 and `inline code`.
 

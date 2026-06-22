@@ -1,7 +1,9 @@
 /*
- * Book Cloth — a dark-only Obsidian theme.
- * A warm, paper-like take on the Claude Cowork look:
+ * Orange Book Cloth — a dark-only Obsidian theme.
+ * A warm, paper-like look inspired by the Claude/Anthropic aesthetic:
  * toasted-charcoal surfaces, a clay/coral accent, serif headings.
+ *
+ * Independent, unofficial theme — not affiliated with or endorsed by Anthropic.
  *
  * (c) 2026 SurprisedDuck. MIT.
  * Heading font: Newsreader by Production Type, SIL OFL 1.1.
@@ -47,7 +49,7 @@
     --bc-border-hi: #423f39;
 
     /* Clay / book-cloth accent family */
-    --bc-clay:     #cc785c; /* accent — Anthropic "book cloth" */
+    --bc-clay:     #cc785c; /* warm clay accent */
     --bc-coral:    #d97757; /* links */
     --bc-coral-hi: #e08a6b; /* link / accent hover */
     --bc-clay-rgb: 204,120,92;
@@ -246,7 +248,7 @@ body
     --code-important:   var(--bc-yellow);
 }
 
-/* ── Serif headings (the Cowork signature) ───────────────────────── */
+/* ── Serif headings (the editorial signature) ────────────────────── */
 /* Reading view + live preview headings, the inline title, and the
    outline/heading panes all get the bundled serif. Body stays sans. */
 .theme-dark .markdown-rendered :is(h1, h2, h3, h4, h5, h6),

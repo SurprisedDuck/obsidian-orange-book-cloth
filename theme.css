@@ -258,3 +258,61 @@ body
     border-bottom: 1px solid rgba(var(--bc-clay-rgb), .35);
     padding-bottom: .18em;
 }
+
+/* ── Rounded floating panes (paper cards on a backdrop) ──────────── */
+.theme-dark .workspace-split.mod-root { background: var(--bc-backdrop); }
+.theme-dark .workspace-tabs .workspace-leaf { margin: 3px; overflow: hidden; }
+.theme-dark .workspace-tabs .workspace-leaf,
+.theme-dark .workspace-tab-container { border-radius: var(--radius-l); }
+
+/* ── Tags as soft clay pills ─────────────────────────────────────── */
+.theme-dark .markdown-rendered a.tag,
+.theme-dark .cm-s-obsidian .cm-hashtag {
+    border-radius: 999px;
+    font-size: .82em;
+    font-weight: 550;
+}
+
+/* ── Keep ==highlight== foreground readable in both modes ────────── */
+.theme-dark .markdown-rendered mark,
+.theme-dark .cm-highlight,
+.theme-dark span.cm-highlight { color: var(--text-highlight-fg); }
+
+/* ── Rounded images & embeds ─────────────────────────────────────── */
+.theme-dark .markdown-rendered img,
+.theme-dark .markdown-rendered .internal-embed,
+.theme-dark .cm-s-obsidian .image-embed img { border-radius: var(--radius-m); }
+
+/* ── Reading-view code blocks: subtle warm border ────────────────── */
+.theme-dark .markdown-rendered pre {
+    border: 1px solid var(--bc-surface);
+    border-radius: var(--radius-m);
+}
+
+/* ── Callouts: warm card with tinted title row ───────────────────── */
+.theme-dark .callout {
+    border-radius: var(--radius-m);
+    border: 1px solid rgba(var(--callout-color), .25);
+    background: rgba(var(--callout-color), .06);
+    mix-blend-mode: normal;
+}
+.theme-dark .callout-title { padding: .55em .75em; }
+
+/* ── Inputs & buttons: warm surfaces, clay CTA ───────────────────── */
+.theme-dark button.mod-cta,
+.theme-dark .mod-cta {
+    background: var(--bc-clay);
+    color: var(--bc-emphasis);
+}
+.theme-dark button.mod-cta:hover,
+.theme-dark .mod-cta:hover { background: var(--bc-coral-hi); }
+
+/* ── Active tab: clay underline accent ───────────────────────────── */
+.theme-dark .workspace-tab-header.is-active.mod-active::after {
+    content: "";
+    position: absolute;
+    left: 8px; right: 8px; bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--bc-clay);
+}

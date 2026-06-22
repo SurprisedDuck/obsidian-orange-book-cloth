@@ -400,3 +400,8 @@ body
 .theme-dark .workspace-split.mod-sidedock > .workspace-leaf-resize-handle {
     border: none !important;
 }
+/* ...but keep a short divider only at the top, between the sidebar header
+   (tab strip) and the document tabs. */
+.theme-dark .workspace-split.mod-left-split .workspace-tab-header-container {
+    border-right: 1px solid var(--background-modifier-border);
+}

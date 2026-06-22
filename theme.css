@@ -394,3 +394,7 @@ body
 .theme-dark .workspace-drawer-vault-switcher {
     border-top: 0 !important;
 }
+/* Vertical divider between the ribbon and the file list. */
+.theme-dark .workspace-ribbon.mod-left {
+    border-right: 0 !important;
+}

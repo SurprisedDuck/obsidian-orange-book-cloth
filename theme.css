@@ -381,14 +381,14 @@ body
 }
 
 /* ── Remove left-sidebar separator lines ─────────────────────────── */
-/* Top: keep the tab-header strip clean, but show a long horizontal divider
-   under the file-explorer toolbar. */
+/* Top: keep the tab-header strip clean, and show a long horizontal divider
+   above the file-explorer toolbar (between the tab strip and the toolbar). */
 .theme-dark .workspace-split.mod-left-split .workspace-tab-header-container {
     border-bottom: none;
     box-shadow: none;
 }
 .theme-dark .workspace-split.mod-left-split .nav-header {
-    border-bottom: 1px solid var(--background-modifier-border);
+    border-top: 1px solid var(--background-modifier-border);
 }
 /* Bottom: divider above the vault switcher / profile. Obsidian sets this
    border with a fairly specific rule, so override it forcefully. */

@@ -58,6 +58,7 @@
     --bc-text:     #d6d2c6;
     --bc-emphasis: #f5f3ec;
     --bc-muted:    #8f8a80;
+    --bc-muted-hi: #a8a299; /* slightly brighter muted (icons, folders) */
     --bc-faint:    #6b675e;
 
     /* Warm aurora, semantic / syntax */
@@ -209,6 +210,8 @@ body
     --nav-item-color-hover:        var(--bc-emphasis);
     --nav-item-color-active:       var(--bc-emphasis);
     --nav-item-background-active:  rgba(var(--bc-clay-rgb), .14);
+    --icon-color:                  var(--bc-muted-hi);
+    --icon-opacity:                1;
     --icon-color-hover:            var(--bc-clay);
     --icon-color-focused:          var(--bc-coral-hi);
     --titlebar-background:         var(--bc-backdrop);
@@ -375,7 +378,7 @@ body
 
 /* Folder titles read as quiet section labels. */
 .theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title-content {
-    color: var(--bc-muted);
+    color: var(--bc-muted-hi);
     font-size: .92em;
     letter-spacing: .01em;
 }

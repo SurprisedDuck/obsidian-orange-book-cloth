@@ -43,6 +43,8 @@
     --bc-surface-hi: #3d3b38;
     --bc-row-odd:    #222220; /* table row striping */
     --bc-row-even:   #272623;
+    --bc-border:    #38362f; /* warm hairline border */
+    --bc-border-hi: #423f39;
 
     /* Clay / book-cloth accent family */
     --bc-clay:     #cc785c; /* accent — Anthropic "book cloth" */
@@ -118,8 +120,8 @@ body
     --background-primary-alt:           var(--bc-editor);
     --background-secondary:             var(--bc-sidebar);
     --background-secondary-alt:         var(--bc-elev);
-    --background-modifier-border:       var(--bc-surface);
-    --background-modifier-border-hover: var(--bc-surface-hi);
+    --background-modifier-border:       var(--bc-border);
+    --background-modifier-border-hover: var(--bc-border-hi);
     --background-modifier-hover:        rgba(var(--bc-clay-rgb), .08);
 
     /* Text */
@@ -207,6 +209,10 @@ body
     --nav-item-background-active:  rgba(var(--bc-clay-rgb), .14);
     --icon-color-hover:            var(--bc-clay);
     --icon-color-focused:          var(--bc-coral-hi);
+    --titlebar-background:         var(--bc-backdrop);
+    --titlebar-background-focused: var(--bc-backdrop);
+    --ribbon-background:           var(--bc-sidebar);
+    --status-bar-background:       var(--bc-sidebar);
     --titlebar-text-color-focused: var(--bc-emphasis);
     --tab-text-color-focused-active:         var(--bc-emphasis);
     --tab-text-color-focused-active-current: var(--bc-emphasis);

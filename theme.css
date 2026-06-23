@@ -406,3 +406,11 @@ body
 .theme-dark .workspace-split.mod-sidedock > .workspace-leaf-resize-handle {
     border: none !important;
 }
+
+/* ── Active sidebar tab: soft clay pill instead of a flat grey box ── */
+.theme-dark .workspace-tabs.mod-top-left-space .workspace-tab-header.is-active .workspace-tab-header-inner {
+    background-color: rgba(var(--bc-clay-rgb), .15);
+}
+.theme-dark .workspace-tabs.mod-top-left-space .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+    color: var(--bc-clay);
+}
